@@ -47581,3 +47581,10 @@ body {
   background-color: #ffffff;
   border: 0;
 }
+
+@media only screen and (min-width: 992px) {
+  .mr-21{
+    margin-right: 21rem !important;
+  }
+}
+
