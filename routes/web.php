@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeControllers;
 use App\Http\Controllers\panel\product\ProductControllers;
 use App\Http\Controllers\panel\user\UserControllers;
+use App\Http\Controllers\panel\motor\MotorControllers;
+
 
 
 /*
@@ -25,6 +27,9 @@ Route::get('/manage-product', [ProductControllers::class, 'manage'])->name('mana
 Route::get('/edit-product', [ProductControllers::class, 'edit'])->name('edit-product');
 Route::get('/create-user', [UserControllers::class, 'create'])->name('create-user');
 Route::get('/manage-user', [UserControllers::class, 'manage'])->name('manage-user');
+Route::get('/motor-field-make', [MotorControllers::class, 'create'])->name('motor-field-make');
+Route::get('/motor-field-manage', [MotorControllers::class, 'manage'])->name('motor-field-manage');
+
 
 
 

@@ -25,6 +25,7 @@
             <div class="d-flex justify-content-center mt-10">
                 <button class="btn btn-primary fw-bolder">{{ trans('app.submit')}}</button>
             </div>
+        </div>
     </div>
 </div>
 @endsection
