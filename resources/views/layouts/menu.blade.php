@@ -109,6 +109,33 @@
                                 </div>
                             </div>
                         </div>
+                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                            <span class="menu-link">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">{{ trans('app.formsaz')}}</span>
+                                <span class="menu-arrow"></span>
+                            </span>
+                            <div class="menu-sub menu-sub-accordion menu-active-bg" kt-hidden-height="" style="display: none; overflow: hidden;">
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">{{ trans('app.create formsaz')}}</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">{{ trans('app.manage formsaz')}}</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="menu-item">
                             <a class="menu-link" href="#">
                                 <span class="menu-bullet">
@@ -139,14 +166,6 @@
                                     <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title">{{ trans('app.club')}}</span>
-                            </a>
-                        </div>
-                        <div class="menu-item">
-                            <a class="menu-link" href="#">
-                                <span class="menu-bullet">
-                                    <span class="bullet bullet-dot"></span>
-                                </span>
-                                <span class="menu-title">{{ trans('app.formsaz')}}</span>
                             </a>
                         </div>
                         <div class="menu-item">
@@ -282,7 +301,7 @@
                     </span>
                     <div class="menu-sub menu-sub-dropdown w-225px w-lg-275px px-1 py-4" style="">
                         <div class="menu-item">
-                            <a class="menu-link" href="#">
+                            <a class="menu-link" href="{{ route('manage-user')}}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -298,7 +317,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="#">
+                            <a class="menu-link" href="{{ route('create-user')}}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
