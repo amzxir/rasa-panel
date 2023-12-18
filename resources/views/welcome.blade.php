@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title' , 'داشبورد')    
+@section('title' , 'داشبورد')
+@section('breadcrumb' , 'داشبورد')
 @section('content')
 <!--begin::Row-->
 <div class="row g-5 g-xl-8">

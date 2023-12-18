@@ -47588,3 +47588,17 @@ body {
   }
 }
 
+.ul-item{
+  padding: 0;
+}
+
+.item-category{
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
