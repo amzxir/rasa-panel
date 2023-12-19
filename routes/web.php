@@ -7,6 +7,8 @@ use App\Http\Controllers\panel\user\UserControllers;
 use App\Http\Controllers\panel\motor\MotorControllers;
 use App\Http\Controllers\panel\brand\BrandControllers;
 use App\Http\Controllers\panel\category\CategoryControllers;
+use App\Http\Controllers\panel\slider\SliderControllers;
+
 
 
 
@@ -37,6 +39,8 @@ Route::get('/manage-brand', [BrandControllers::class, 'manage'])->name('manage-b
 Route::get('/create-category', [CategoryControllers::class, 'create'])->name('create-category');
 Route::get('/manage-category', [CategoryControllers::class, 'manage'])->name('manage-category');
 Route::get('/category-tree-view', [CategoryControllers::class, 'tree'])->name('category-tree-view');
+Route::get('/slider', [SliderControllers::class, 'index'])->name('slider');
+
 
 
 
