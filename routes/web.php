@@ -14,6 +14,7 @@ use App\Http\Controllers\panel\about\AboutControllers;
 use App\Http\Controllers\panel\send\SendControllers;
 use App\Http\Controllers\panel\route\RouteControllers;
 use App\Http\Controllers\panel\advertise\AdvertiseControllers;
+use App\Http\Controllers\panel\discount\DiscountControllers;
 
 
 
@@ -54,6 +55,7 @@ Route::get('/send', [SendControllers::class, 'index'])->name('send');
 Route::get('/create-redirect', [RouteControllers::class, 'create'])->name('create-redirect');
 Route::get('/manage-redirect', [RouteControllers::class, 'manage'])->name('manage-redirect');
 Route::get('/advertise', [AdvertiseControllers::class, 'index'])->name('advertise');
+Route::get('/discount', [DiscountControllers::class, 'index'])->name('discount');
 
 
 
