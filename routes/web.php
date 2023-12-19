@@ -6,6 +6,8 @@ use App\Http\Controllers\panel\product\ProductControllers;
 use App\Http\Controllers\panel\user\UserControllers;
 use App\Http\Controllers\panel\motor\MotorControllers;
 use App\Http\Controllers\panel\brand\BrandControllers;
+use App\Http\Controllers\panel\category\CategoryControllers;
+
 
 
 
@@ -32,6 +34,10 @@ Route::get('/motor-field-make', [MotorControllers::class, 'create'])->name('moto
 Route::get('/motor-field-manage', [MotorControllers::class, 'manage'])->name('motor-field-manage');
 Route::get('/create-brand', [BrandControllers::class, 'create'])->name('create-brand');
 Route::get('/manage-brand', [BrandControllers::class, 'manage'])->name('manage-brand');
+Route::get('/create-category', [CategoryControllers::class, 'create'])->name('create-category');
+Route::get('/manage-category', [CategoryControllers::class, 'manage'])->name('manage-category');
+Route::get('/category-tree-view', [CategoryControllers::class, 'tree'])->name('category-tree-view');
+
 
 
 
