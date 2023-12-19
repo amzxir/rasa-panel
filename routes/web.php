@@ -12,6 +12,7 @@ use App\Http\Controllers\panel\faq\FaqControllers;
 use App\Http\Controllers\panel\provision\ProvisionControllers;
 use App\Http\Controllers\panel\about\AboutControllers;
 use App\Http\Controllers\panel\send\SendControllers;
+use App\Http\Controllers\panel\route\RouteControllers;
 
 
 
@@ -49,6 +50,9 @@ Route::get('/privacy', [FaqControllers::class, 'index'])->name('privacy');
 Route::get('/provision', [ProvisionControllers::class, 'index'])->name('provision');
 Route::get('/about', [AboutControllers::class, 'index'])->name('about');
 Route::get('/send', [SendControllers::class, 'index'])->name('send');
+Route::get('/create-redirect', [RouteControllers::class, 'create'])->name('create-redirect');
+Route::get('/manage-redirect', [RouteControllers::class, 'manage'])->name('manage-redirect');
+
 
 
 
