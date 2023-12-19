@@ -152,7 +152,7 @@ return [
     'upload image for mobile' => 'بارگذاری تصویر برای موبایل',
     'link' => 'لینک',
     'edit slider' => 'ویرایش اسلایدر',
-    'name' => 'نام',
+    'the name of the new sending method' => 'نام روش ارسال جدید',
     'name' => 'نام',
     'name' => 'نام',
     'name' => 'نام',

@@ -8,6 +8,11 @@ use App\Http\Controllers\panel\motor\MotorControllers;
 use App\Http\Controllers\panel\brand\BrandControllers;
 use App\Http\Controllers\panel\category\CategoryControllers;
 use App\Http\Controllers\panel\slider\SliderControllers;
+use App\Http\Controllers\panel\faq\FaqControllers;
+use App\Http\Controllers\panel\provision\ProvisionControllers;
+use App\Http\Controllers\panel\about\AboutControllers;
+use App\Http\Controllers\panel\send\SendControllers;
+
 
 
 
@@ -40,6 +45,11 @@ Route::get('/create-category', [CategoryControllers::class, 'create'])->name('cr
 Route::get('/manage-category', [CategoryControllers::class, 'manage'])->name('manage-category');
 Route::get('/category-tree-view', [CategoryControllers::class, 'tree'])->name('category-tree-view');
 Route::get('/slider', [SliderControllers::class, 'index'])->name('slider');
+Route::get('/privacy', [FaqControllers::class, 'index'])->name('privacy');
+Route::get('/provision', [ProvisionControllers::class, 'index'])->name('provision');
+Route::get('/about', [AboutControllers::class, 'index'])->name('about');
+Route::get('/send', [SendControllers::class, 'index'])->name('send');
+
 
 
 
