@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeControllers;
 use App\Http\Controllers\panel\product\ProductControllers;
 use App\Http\Controllers\panel\user\UserControllers;
 use App\Http\Controllers\panel\motor\MotorControllers;
+use App\Http\Controllers\panel\brand\BrandControllers;
 
 
 
@@ -29,6 +30,9 @@ Route::get('/create-user', [UserControllers::class, 'create'])->name('create-use
 Route::get('/manage-user', [UserControllers::class, 'manage'])->name('manage-user');
 Route::get('/motor-field-make', [MotorControllers::class, 'create'])->name('motor-field-make');
 Route::get('/motor-field-manage', [MotorControllers::class, 'manage'])->name('motor-field-manage');
+Route::get('/create-brand', [BrandControllers::class, 'create'])->name('create-brand');
+Route::get('/manage-brand', [BrandControllers::class, 'manage'])->name('manage-brand');
+
 
 
 
