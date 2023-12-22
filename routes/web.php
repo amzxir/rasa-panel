@@ -20,6 +20,9 @@ use App\Http\Controllers\panel\comission\ComissionControllers;
 use App\Http\Controllers\panel\auth\AuthControllers;
 use App\Http\Controllers\panel\rasajet\RasajetControllers;
 use App\Http\Controllers\panel\center\MessageControllers;
+use App\Http\Controllers\panel\ticket\TicketControllers;
+use App\Http\Controllers\panel\reports\ColleagueControllers;
+use App\Http\Controllers\panel\infractions\InfractionsControllers;
 
 
 
@@ -66,6 +69,11 @@ Route::get('/comission', [ComissionControllers::class, 'index'])->name('comissio
 Route::get('/auth', [AuthControllers::class, 'index'])->name('auth');
 Route::get('/rasajet', [RasajetControllers::class, 'index'])->name('rasajet');
 Route::get('/mess-center', [MessageControllers::class, 'index'])->name('mess-center');
+Route::get('/ticket', [TicketControllers::class, 'create'])->name('ticket');
+Route::get('/reports-colleague', [ColleagueControllers::class, 'index'])->name('reports-colleague');
+Route::get('/infractions', [InfractionsControllers::class, 'index'])->name('infractions');
+
+
 
 
 
