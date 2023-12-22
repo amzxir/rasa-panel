@@ -23,6 +23,8 @@ use App\Http\Controllers\panel\center\MessageControllers;
 use App\Http\Controllers\panel\ticket\TicketControllers;
 use App\Http\Controllers\panel\reports\ColleagueControllers;
 use App\Http\Controllers\panel\infractions\InfractionsControllers;
+use App\Http\Controllers\panel\invoice\InvoiceControllers;
+use App\Http\Controllers\panel\symbol\SymbolControllers;
 
 
 
@@ -72,6 +74,8 @@ Route::get('/mess-center', [MessageControllers::class, 'index'])->name('mess-cen
 Route::get('/ticket', [TicketControllers::class, 'create'])->name('ticket');
 Route::get('/reports-colleague', [ColleagueControllers::class, 'index'])->name('reports-colleague');
 Route::get('/infractions', [InfractionsControllers::class, 'index'])->name('infractions');
+Route::get('/invoice', [InvoiceControllers::class, 'index'])->name('invoice');
+Route::get('/symbol', [SymbolControllers::class, 'index'])->name('symbol');
 
 
 
