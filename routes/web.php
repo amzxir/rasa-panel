@@ -22,6 +22,10 @@ use App\Http\Controllers\panel\rasajet\RasajetControllers;
 use App\Http\Controllers\panel\center\MessageControllers;
 use App\Http\Controllers\panel\ticket\TicketControllers;
 use App\Http\Controllers\panel\reports\ColleagueControllers;
+use App\Http\Controllers\panel\reports\TransportControllers;
+use App\Http\Controllers\panel\reports\SellerControllers;
+use App\Http\Controllers\panel\reports\OrderControllers;
+use App\Http\Controllers\panel\reports\FunctionControllers;
 use App\Http\Controllers\panel\infractions\InfractionsControllers;
 use App\Http\Controllers\panel\invoice\InvoiceControllers;
 use App\Http\Controllers\panel\symbol\SymbolControllers;
@@ -76,6 +80,11 @@ Route::get('/reports-colleague', [ColleagueControllers::class, 'index'])->name('
 Route::get('/infractions', [InfractionsControllers::class, 'index'])->name('infractions');
 Route::get('/invoice', [InvoiceControllers::class, 'index'])->name('invoice');
 Route::get('/symbol', [SymbolControllers::class, 'index'])->name('symbol');
+Route::get('/report-transport', [TransportControllers::class, 'index'])->name('report-transport');
+Route::get('/report-seller', [SellerControllers::class, 'index'])->name('report-seller');
+Route::get('/report-order', [OrderControllers::class, 'index'])->name('report-order');
+Route::get('/report-function', [FunctionControllers::class, 'index'])->name('report-function');
+
 
 
 
