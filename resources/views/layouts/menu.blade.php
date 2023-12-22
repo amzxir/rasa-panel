@@ -137,22 +137,6 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="#">
-                                <span class="menu-bullet">
-                                    <span class="bullet bullet-dot"></span>
-                                </span>
-                                <span class="menu-title">{{ trans('app.product description')}}</span>
-                            </a>
-                        </div>
-                        <div class="menu-item">
-                            <a class="menu-link" href="#">
-                                <span class="menu-bullet">
-                                    <span class="bullet bullet-dot"></span>
-                                </span>
-                                <span class="menu-title">{{ trans('app.category description')}}</span>
-                            </a>
-                        </div>
-                        <div class="menu-item">
                             <a class="menu-link" target="_black" href="{{ url('https://club.rasadent.com/')}}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
@@ -211,19 +195,11 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="#">
+                            <a class="menu-link" href="{{ route('rasajet')}}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title">{{ trans('app.rasajet')}}</span>
-                            </a>
-                        </div>
-                        <div class="menu-item">
-                            <a class="menu-link" href="#">
-                                <span class="menu-bullet">
-                                    <span class="bullet bullet-dot"></span>
-                                </span>
-                                <span class="menu-title">{{ trans('app.create invoice')}}</span>
                             </a>
                         </div>
                     </div>

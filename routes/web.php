@@ -18,6 +18,7 @@ use App\Http\Controllers\panel\discount\DiscountControllers;
 use App\Http\Controllers\panel\contact\ContactControllers;
 use App\Http\Controllers\panel\comission\ComissionControllers;
 use App\Http\Controllers\panel\auth\AuthControllers;
+use App\Http\Controllers\panel\rasajet\RasajetControllers;
 
 
 
@@ -62,6 +63,8 @@ Route::get('/discount', [DiscountControllers::class, 'index'])->name('discount')
 Route::get('/contact', [ContactControllers::class, 'index'])->name('contact');
 Route::get('/comission', [ComissionControllers::class, 'index'])->name('comission');
 Route::get('/auth', [AuthControllers::class, 'index'])->name('auth');
+Route::get('/rasajet', [RasajetControllers::class, 'index'])->name('rasajet');
+
 
 
 
