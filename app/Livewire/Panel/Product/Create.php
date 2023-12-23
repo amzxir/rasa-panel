@@ -14,7 +14,7 @@ class Create extends Component
 
     use WithFileUploads;
 
-    public $category , $name_fa , $name_en , $unit , $value , $brand , $content , $seo , $image , $catalog , $video , $warranty ,  $tagName = 'div';
+    public $category , $name_fa , $name_en , $unit , $value , $brand , $content , $seo , $image , $catalog , $video , $warranty;
 
     protected $rules = [
         'category' => 'required|min:2',
