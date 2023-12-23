@@ -32,7 +32,11 @@
         </div>
     </div>
 
-    
+    @livewireScripts
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+    <x-livewire-alert::scripts />
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js')}}"></script>
     <script src="{{ asset('assets/js/scripts.bundle.js')}}"></script>
     <script src="{{ asset('assets/plugins/custom/leaflet/leaflet.bundle.js')}}"></script>
@@ -44,10 +48,6 @@
     <script src="{{ asset('assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
     <script src="{{ asset('assets/js/custom/utilities/modals/create-app.js')}}"></script>
     <script src="{{ asset('assets/js/custom/utilities/modals/users-search.js')}}"></script>
-    @livewireScripts
 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
-    <x-livewire-alert::scripts />
 </body>
 </html>

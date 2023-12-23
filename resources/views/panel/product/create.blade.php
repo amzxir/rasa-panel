@@ -5,6 +5,7 @@
     <div class="container-xxl" id="kt_content_container">
         <div class="flex-lg-row-fluid ms-lg-15">
             @livewire('panel.product.create')
+            {{-- <livewire:counter />  --}}
         </div>
     </div>
 @endsection
