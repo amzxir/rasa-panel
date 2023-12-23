@@ -1,4 +1,5 @@
 <div>
+    <{{ $tagName }}>
     <ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-bold mb-8" wire:ignore.self>
         <li class="nav-item" wire:ignore.self>
             <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_ecommerce_settings_general" wire:ignore.self>
@@ -200,4 +201,5 @@
             </div>
         </div>
     </div>
+    </{{ $tagName }}>
 </div>
