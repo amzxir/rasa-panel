@@ -47602,3 +47602,9 @@ body {
 .pointer{
   cursor: pointer;
 }
+
+.error{
+  font-size: 11px;
+  font-weight: bolder;
+  color: red;
+}

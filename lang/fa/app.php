@@ -206,7 +206,7 @@ return [
     'selected image of instant offer' => 'تصویر منتخب پیشنهاد لحظه ای',
     'short slogan of the software' => 'شعار کوتاه نرم افزار',
     'phone' => 'شماره ثابت',
-    'name' => 'نام',
+    'upload image product' => 'بارگذاری تصویر محصول',
     'name' => 'نام',
     'name' => 'نام',
     'name' => 'نام',
