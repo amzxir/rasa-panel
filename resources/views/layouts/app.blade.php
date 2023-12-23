@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
     {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+    @livewireStyles
 </head>
 <body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed aside-fixed aside-secondary-disabled">
     <div class="d-flex flex-column flex-root">
@@ -43,5 +44,10 @@
     <script src="{{ asset('assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
     <script src="{{ asset('assets/js/custom/utilities/modals/create-app.js')}}"></script>
     <script src="{{ asset('assets/js/custom/utilities/modals/users-search.js')}}"></script>
+    @livewireScripts
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+    <x-livewire-alert::scripts />
 </body>
 </html>
