@@ -37,6 +37,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
     <x-livewire-alert::scripts />
+    @livewireChartsScripts
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js')}}"></script>
     <script src="{{ asset('assets/js/scripts.bundle.js')}}"></script>
     <script src="{{ asset('assets/plugins/custom/leaflet/leaflet.bundle.js')}}"></script>

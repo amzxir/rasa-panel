@@ -15,7 +15,8 @@
             </div>
         </div>
         <div class="card-body">
-            <div id="kt_charts_widget_2_chart" style="height: 350px"></div>
+            @livewire('panel.reports.order')
+            {{-- <div id="kt_charts_widget_2_chart" style="height: 350px"></div> --}}
         </div>
     </div>
 </div>
