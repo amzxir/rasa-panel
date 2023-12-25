@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>رسادنت - @yield('title')</title>
-    <link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico')}}" />
+    <link rel="shortcut icon" href="{{ asset('/image/favicon.ico')}}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <link href="{{ asset('assets/plugins/custom/leaflet/leaflet.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />

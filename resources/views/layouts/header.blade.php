@@ -6,7 +6,7 @@
             <!--begin::Mobile logo-->
             <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
                 <a href="{{ route('/')}}">
-                    <img alt="Logo" src="assets/media/logos/logo-demo9.svg" class="h-35px" />
+                    <img alt="Logo" src="{{ asset('image/logo.png')}}" class="h-35px" />
                 </a>
             </div>
             <!--end::Mobile logo-->
