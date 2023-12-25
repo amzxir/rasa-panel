@@ -1,27 +1,28 @@
 <?php
 
-namespace App\Livewire\Panel\Category;
+namespace App\Livewire\Panel\Formsaz;
 
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
-use Livewire\WithFileUploads;
+
 
 class Create extends Component
 {
     use LivewireAlert;
 
-    use WithFileUploads;
-
-    public $parent_category , $name , $image , $description;
+    public $field , $menu , $peroperty , $compelete , $see , $separator , $category;
 
     protected $rules = [
-        'parent_category' => 'required|min:2',
-        'name' => 'required|min:2',
-        'description' => 'required|min:5',
-        'image' => 'image|max:1024',
+        'category' => 'required|min:2',
+        'field' => 'required|min:2',
+        'menu' => 'required',
+        'peroperty' => 'required',
+        'compelete' => 'required',
+        'see' => 'required',
+        'separator' => 'required|min:5',
     ];
 
-    public function ConfirmCreateCategory (){
+    public function ConfirmCreateFormsaz (){
 
         $this->validate();
 
@@ -38,7 +39,7 @@ class Create extends Component
 
     public function Create () {
         $this->alert('success', 'اطالاعات با موفقیت ثبت شد');
-        $this->reset('parent_category' , 'name' , 'description' , 'image');
+        $this->reset('category', 'field', 'menu', 'peroperty', 'compelete', 'see', 'separator');
     }
 
     protected $listeners = [
@@ -47,6 +48,6 @@ class Create extends Component
 
     public function render()
     {
-        return view('livewire.panel.category.create');
+        return view('livewire.panel.formsaz.create');
     }
 }
