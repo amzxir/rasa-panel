@@ -304,7 +304,7 @@ return [
          "recipient_name" => "نام گیرنده",
          "mobile_receiver" => "موبایل گیرنده",
          "order" => "سفارش",
-         "province" => "استان",
+         "access" => "دسترسی",
          "province" => "استان",
          "province" => "استان",
 
